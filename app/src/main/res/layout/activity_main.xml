@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -13,5 +14,48 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to learning the countries flags"/>
-</RelativeLayout>
+        android:text="@string/welcome"
+        android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+    <Button
+        android:id="@+id/angola_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/angola"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/brazil_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/brazil"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/japan_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/japan"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/portugal_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/portugal"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/united_kingdom_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/united_kingdom"
+        android:onClick="onClick"/>
+
+
+</LinearLayout>

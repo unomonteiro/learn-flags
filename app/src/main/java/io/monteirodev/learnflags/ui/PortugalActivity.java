@@ -1,5 +1,6 @@
 package io.monteirodev.learnflags.ui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -48,6 +49,8 @@ public class PortugalActivity extends AppCompatActivity
             colorBelongsToFlag("red");
         } else if (v.getId() == R.id.yellow_button){
             colorBelongsToFlag("yellow");
+        } else if (v.getId() == nextButton.getId()) {
+            finish();
         } else {
             Toast.makeText(PortugalActivity.this, "Try again!", Toast.LENGTH_SHORT).show();
         }
@@ -56,7 +59,6 @@ public class PortugalActivity extends AppCompatActivity
     private boolean colorBelongsToFlag(String pressedColor){
         for (String color : colors) {
             if (pressedColor.equals(color)) {
-
                 addColorToFlag(color);
                 return true;
             }

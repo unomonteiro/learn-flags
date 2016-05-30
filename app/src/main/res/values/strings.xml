@@ -1,3 +1,11 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Learning Countries Flags</string>
+    <string name="angola">Angola</string>
+    <string name="brazil">Brazil</string>
+    <string name="japan">Japan</string>
+    <string name="united_kingdom">United Kingdom</string>
+    <string name="portugal">Portugal</string>
+    <string name="welcome">Welcome to learning the countries flags.</string>
+    <string name="instructions">Pick the right colors to match the <xliff:g id="nationality" example="Portuguese">%s</xliff:g> flag.</string>
+
 </resources>

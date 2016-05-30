@@ -7,17 +7,18 @@
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/activity_vertical_margin"
-            tools:context=".ui.PortugalActivity">
+            tools:context=".ui.CountryActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/instructions_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Pick the right colors to match the Portuguese flag."
+            android:text="@string/instructions"
             android:textAppearance="@android:style/TextAppearance.Medium"/>
 
         <RelativeLayout
@@ -31,43 +32,39 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/pt_lines"/>
+                tools:src="@drawable/pt_lines"/>
 
             <ImageView
-                android:id="@+id/greenImageView"
+                android:id="@+id/first_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="invisible"
                 android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                android:src="@drawable/pt_green"/>
+                android:adjustViewBounds="true"/>
 
             <ImageView
-                android:id="@+id/redImageView"
+                android:id="@+id/second_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="invisible"
                 android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                android:src="@drawable/pt_red"/>
+                android:adjustViewBounds="true"/>
 
             <ImageView
-                android:id="@+id/yellowImageView"
+                android:id="@+id/third_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="invisible"
                 android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                android:src="@drawable/pt_yellow"/>
+                android:adjustViewBounds="true"/>
 
             <ImageView
-                android:id="@+id/portugal_image_view"
+                android:id="@+id/country_image_view"
                 android:visibility="invisible"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                android:src="@drawable/pt_portugal"/>
+                android:adjustViewBounds="true"/>
 
         </RelativeLayout>
 
@@ -143,12 +140,12 @@
         </HorizontalScrollView>
 
         <Button
-            android:id="@+id/next_button"
+            android:id="@+id/back_button"
             android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Choose Another Flag"
+            android:text="Next Flag"
             android:onClick="onClick"/>
     </LinearLayout>
 </ScrollView>
