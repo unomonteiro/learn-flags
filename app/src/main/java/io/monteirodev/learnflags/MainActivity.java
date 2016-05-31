@@ -44,6 +44,16 @@ public class MainActivity extends AppCompatActivity
             intentAO.putExtra(COUNTRY_KEY,"br");
             intentAO.putExtra(COUNTRY_NAME,getString(R.string.brazil));
             startActivity(intentAO);
+        } else if (v.getId() == japanButton.getId()) {
+            Intent intentAO = new Intent(this, CountryActivity.class);
+            intentAO.putExtra(COUNTRY_KEY,"jp");
+            intentAO.putExtra(COUNTRY_NAME,getString(R.string.japan));
+            startActivity(intentAO);
+        } else if (v.getId() == unitedKingdomButton.getId()) {
+            Intent intentAO = new Intent(this, CountryActivity.class);
+            intentAO.putExtra(COUNTRY_KEY,"uk");
+            intentAO.putExtra(COUNTRY_NAME,getString(R.string.united_kingdom));
+            startActivity(intentAO);
         } else if (v.getId() == portugalButton.getId()) {
             Intent intentPT = new Intent(this, PortugalActivity.class);
             startActivity(intentPT);
