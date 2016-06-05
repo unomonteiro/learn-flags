@@ -15,8 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.PortugalActivity">
-        </activity>
         <activity android:name=".ui.CountryActivity">
         </activity>
     </application>

@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import io.monteirodev.learnflags.ui.CountryActivity;
-import io.monteirodev.learnflags.ui.PortugalActivity;
 
 public class MainActivity extends AppCompatActivity
     implements View.OnClickListener {
@@ -34,6 +33,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onClick(View v) {
+
         if (v.getId() == angolaButton.getId()) {
             Intent intentAO = new Intent(this, CountryActivity.class);
             intentAO.putExtra(COUNTRY_KEY, "ao");
@@ -54,8 +54,10 @@ public class MainActivity extends AppCompatActivity
             intentAO.putExtra(COUNTRY_KEY,"uk");
             intentAO.putExtra(COUNTRY_NAME,getString(R.string.united_kingdom));
             startActivity(intentAO);
-        } else if (v.getId() == portugalButton.getId()) {
-            Intent intentPT = new Intent(this, PortugalActivity.class);
+        } else {
+            Intent intentPT = new Intent(this, CountryActivity.class);
+            intentPT.putExtra(COUNTRY_KEY,"pt");
+            intentPT.putExtra(COUNTRY_NAME,getString(R.string.united_kingdom));
             startActivity(intentPT);
         }
 

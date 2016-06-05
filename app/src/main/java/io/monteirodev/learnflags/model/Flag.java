@@ -27,6 +27,9 @@ public class Flag {
             }  case "jp": {
                 initializeJP();
                 break;
+            }  case "pt": {
+                initializePT();
+                break;
             }  case "uk": {
                 initializeUK();
                 break;
